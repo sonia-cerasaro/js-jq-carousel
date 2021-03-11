@@ -21,3 +21,12 @@ $(document).ready(function(){
   });
 
 })
+
+
+$(document).keydown( function(eventObject) {
+     if(eventObject.which==37) {//freccia sinistra
+        $('.prev').click();//click su prev html
+     } else if(eventObject.which==39) {//freccia destra
+        $('.next').click();//click su next html
+     }
+} );
